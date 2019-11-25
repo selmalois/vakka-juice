@@ -6,8 +6,13 @@
 body {
     margin: 0;
     font-family: Helvetica, sans-serif;
+    grid-column: auto;
+    grid-template-columns: 2fr;
 }
 
+h1, h2, h3, h4, p {
+    margin: 0;
+}
 
 /********************** header **********************/
 
@@ -54,14 +59,33 @@ section {
 #landing-image {
     background-color: black;
     color: white;
-}
+    text-align: center;
 
-.tekst {
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #produkter {
     background-color: #EBAB55;
+    color: white;
+}
+
+.overskrift-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.juice-kartong {
+    display: grid;
+    justify-content: left;
+    align-items: center;
+}
+
+.produkt-info {
+    display: grid;
+    justify-content: right;
+    align-items: center;
 }
 
 #om-vækka {
