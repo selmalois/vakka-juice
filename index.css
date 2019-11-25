@@ -27,7 +27,7 @@ header {
 .top-nav {
     display: flex;
     align-items: center;
-    justify-content: flex start;
+    justify-content: flex-end;
 }
 
 .top-nav a {
@@ -38,8 +38,8 @@ header {
 
 .logo {
     max-width: 6rem;
+    justify-content: flex-start;
 }
-
 
 /********************** main **********************/
 
@@ -88,8 +88,13 @@ section {
     align-items: center;
 }
 
-#om-vækka {
+#vækka {
     background-color: rgb(0, 0, 0);
+    color: white;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .nytt-utseende {
@@ -100,9 +105,11 @@ section {
     background-color:  rgb(177, 175, 175);
 }
 
-#finn-forhandler {
+#forhandler {
     background-color: black;
     height: 50vh;
+
+    color: white;
 }
 
 .instagram {
