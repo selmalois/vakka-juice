@@ -1,11 +1,16 @@
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
     font-family: Helvetica, sans-serif;
+    font-size: 100%;
+
+    /**** Skal fjernes ****/
+    padding: 1.5rem;
 }
 
 h1, h2, h3, h4, p {
