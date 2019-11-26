@@ -2,15 +2,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     font-family: Helvetica, sans-serif;
     font-size: 100%;
-
-    /**** Skal fjernes ****/
-    padding: 1.5rem;
 }
 
 h1, h2, h3, h4, p {
@@ -69,6 +65,14 @@ section {
 #produkter {
     background-color: #EBAB55;
     color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.appelsin {
+    background-color: black;
+    margin: 1rem;
+    justify-content: space-between;
 }
 
 .overskrift-slide {
