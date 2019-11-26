@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -47,25 +48,28 @@ section {
     background-color: white;
     background-size: cover;
     scroll-snap-align: center;
+    scroll-snap-align: center;
 
+    /*** Er dette riktig måte å lage et universalt grid på? ***/
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 #landing-image {
-    background-color: black;
-    color: white;
-    text-align: center;
-
+    background: url(./img-vækka/testbilde-forside.jpeg);
+    background-size: cover;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.forside {
-    background-position: center;
-    background-size: cover;
+.hjelpelinjer {
+    color: black;
+    text-align: center;
 }
+
+
 
 #produkter {
     background-color: #EBAB55;
@@ -74,14 +78,12 @@ section {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.appelsin {
-    margin: 1rem;
-    justify-content: space-between;
+.produktbilde {
+    background-image: url(./img-vækka/testbilde-produkt.jpeg);
 }
 
-.overskrift-slide {
-    justify-content: left;
-    align-items: center;
+.appelsin {
+    justify-content: space-between;
 }
 
 .juice-kartong {
@@ -93,6 +95,8 @@ section {
     justify-content: right;
     align-items: center;
 }
+
+
 
 #vækka {
     background-color: rgb(0, 0, 0);
@@ -116,6 +120,8 @@ section {
     background-color: black;
 }
 
+
+
 #forhandler {
     background-color: black;
     height: 50vh;
@@ -127,6 +133,8 @@ section {
     justify-content: center;
     align-items: center;
 }
+
+
 
 .instagram {
     height: 50vh;
