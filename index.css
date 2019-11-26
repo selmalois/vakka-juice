@@ -80,11 +80,6 @@ section {
     align-items: center;
 }
 
-.appelsin {
-    justify-content: center;
-    align-items: center;
-}
-
 .produktbilde {
     width: 80%;
     height: 80%;
@@ -124,12 +119,30 @@ section {
 
 #vækka {
     background-color: rgb(0, 0, 0);
-    color: white;
-
+    display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
 }
+
+.spørsmål {
+    color: white;
+    margin: 0 12rem 0 12rem;
+}
+
+.spørsmål-h {
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+}
+
+.spørsmål-p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 2;
+}
+
 
 .nytt-utseende {
     justify-content: left;
