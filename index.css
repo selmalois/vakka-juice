@@ -130,7 +130,7 @@ section {
     margin: 0 12rem 0 12rem;
 }
 
-.spørsmål-h {
+.spørsmål-h1 {
     font-size: 4rem;
     text-transform: uppercase;
     margin-bottom: 2rem;
@@ -147,16 +147,30 @@ section {
 .nytt-utseende {
     justify-content: left;
     align-items: center;
-}
-
-.throwback {
-    align-items: center;
+    margin: 0 12rem 0 12rem;
 }
 
 .minner {
     background-color: black;
 }
 
+.throwback {
+    align-items: center;
+    justify-content: left;
+    align-items: center;
+    margin: 0 12rem 0 12rem;
+}
+
+.info-h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.info-p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    line-height: 2;
+}
 
 
 #forhandler {
@@ -171,6 +185,16 @@ section {
     align-items: center;
 }
 
+.forhandler-h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.forhandler-p {
+    font-size: 1rem;
+    line-height: 2;
+}
 
 
 .instagram {
