@@ -109,10 +109,11 @@ section {
 
 .throwback {
     background-color:  rgb(177, 175, 175);
-
-
-    justify-content: right;
     align-items: center;
+}
+
+.minner {
+    background-color: black;
 }
 
 #forhandler {
