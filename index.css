@@ -48,7 +48,6 @@ section {
     background-color: white;
     background-size: cover;
     scroll-snap-align: center;
-    scroll-snap-align: center;
 
     /*** Er dette riktig måte å lage et universalt grid på? ***/
     display: grid;
@@ -69,6 +68,10 @@ section {
     text-align: center;
 }
 
+.pil-ned {
+    width: 12px;
+    filter: invert(100%);
+}
 
 
 #produkter {
@@ -80,9 +83,20 @@ section {
     align-items: center;
 }
 
+
+.appelsin-bilde-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.appelsin-bilde {
+    width: 280px;
+}
+
 .produktbilde {
-    width: 80%;
-    height: 80%;
+    width: 200px;
+    height: 200px;
     background-image: url(./img-vækka/testbilde-produkt.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -106,6 +120,7 @@ section {
 }
 
 .produktinfo {
+    display: inline-block;
     color: white;
     font-size: 1.5rem;
     text-decoration: none;
