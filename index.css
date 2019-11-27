@@ -176,7 +176,6 @@ section {
 }
 
 .utseende-info {
-    justify-content: left;
     align-items: center;
     margin: 10rem 0 10rem 0;
 }
@@ -213,6 +212,19 @@ section {
     margin: 0 12rem 0 12rem;
 }
 
+.trondheim-bilde-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem 0 10rem 0;
+
+    background-color: blue;
+}
+
+.img-trondheim {
+    object-fit: contain;
+    width: 528px;
+}
 
 #forhandler {
     background-color: black;
