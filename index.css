@@ -54,7 +54,7 @@ section {
     grid-template-columns: 1fr 1fr;
 }
 
-#landing-image {
+#landing-img {
     background: url(./img-vækka/testbilde-forside.jpeg);
     background-size: cover;
     overflow: hidden;
@@ -63,14 +63,14 @@ section {
     align-items: center;
 }
 
-.hjelpelinjer {
-    color: black;
-    text-align: center;
+.img-pil-ned {
+    width: 10%;
+    filter: invert(100%);
 }
 
-.pil-ned {
-    width: 12px;
-    filter: invert(100%);
+.landing-img-guide {
+    color: black;
+    text-align: center;
 }
 
 
