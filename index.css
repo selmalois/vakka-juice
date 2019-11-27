@@ -90,24 +90,14 @@ section {
     align-items: center;
 }
 
-
-.appelsin-bilde-container {
+.appelsin-img-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.appelsin-bilde {
+.appelsin-img {
     width: 280px;
-}
-
-.produktbilde {
-    width: 200px;
-    height: 200px;
-    background-image: url(./img-vækka/testbilde-produkt.jpeg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left center;
 }
 
 .juice-kartong {
@@ -121,7 +111,7 @@ section {
     margin-bottom: 2rem;
 }
 
-.produkt-brødtekst {
+.produkt-brødtekst-appelsin {
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
@@ -137,6 +127,21 @@ section {
     border-top: 2px solid white;
     border-bottom: 2px solid white;
 }
+
+/*** Tror dette må kodes med css og ikke bruke png-filer i HTML. ***/
+.produkt-nav {
+    display: flex;
+    justify-content: center;
+    max-width: 3rem;
+    position: absolute;
+    display: none;
+}
+
+.nav-venstre {
+    left: 50px;
+}
+
+/*** Tror dette må kodes med css og ikke bruke png-filer i HTML. ***/
 
 
 #vækka {
@@ -167,20 +172,13 @@ section {
 
 
 .nytt-utseende {
-    justify-content: left;
-    align-items: center;
     margin: 0 12rem 0 12rem;
 }
 
-.minner {
-    background-color: black;
-}
-
-.throwback {
-    align-items: center;
+.utseende-info {
     justify-content: left;
     align-items: center;
-    margin: 0 12rem 0 12rem;
+    margin: 10rem 0 10rem 0;
 }
 
 .info-h1 {
@@ -192,6 +190,27 @@ section {
     font-size: 1.25rem;
     margin-bottom: 2rem;
     line-height: 2;
+}
+
+.god-juice-bilde-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem 0 10rem 0;
+
+    background-color: blue;
+}
+
+.img-god-juice {
+    object-fit: contain;
+    width: 528px;
+}
+
+.throwback {
+    align-items: center;
+    justify-content: left;
+    align-items: center;
+    margin: 0 12rem 0 12rem;
 }
 
 
