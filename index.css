@@ -247,6 +247,26 @@ section {
 .forhandler-p {
     font-size: 1rem;
     line-height: 2;
+    margin-bottom: -10rem;
+}
+
+.søkefelt-tabell {
+    margin-left: 35rem;
+    margin-right: 35rem;
+}
+
+.søkefelt {
+    background-color: white;
+    margin: 0 6.25rem 0 6.25rem;
+}
+
+.postnummer {
+    color: grey;
+    padding: 1.25rem;
+}
+
+.søk {
+    background-color: grey;
 }
 
 
