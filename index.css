@@ -58,13 +58,20 @@ section {
     background: url(./img-vækka/testbilde-forside.jpeg);
     background-size: cover;
     overflow: hidden;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.landing-pil-ned {
+    position: absolute;
+    bottom: 55px;
+    left: 55px;
+}
+
 .img-pil-ned {
-    width: 10%;
+    width: 8%;
     filter: invert(100%);
 }
 
