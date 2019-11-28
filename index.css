@@ -101,6 +101,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 2rem 0 12rem;
 }
 
 .appelsin-img {
@@ -112,31 +113,37 @@ section {
     align-items: center;
 }
 
+.produktsmak-appelsin {
+    margin: 0 12rem 0 2rem;
+}
+
 .produktsmak {
-    font-size: 4rem;
+    font-size: 3.625rem;
     text-transform: uppercase;
+    line-height: 3.125rem;
     margin-bottom: 2rem;
 }
 
 .produkt-brødtekst-appelsin {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.67rem;
     margin-bottom: 2rem;
 }
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible-info {
     text-transform: uppercase;
-    color: black;
+    color: white;
     cursor: pointer;
-    padding: 18px;
+    padding: 0.5rem;
     width: 100%;
     border: none;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
     text-align: left;
     outline: none;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
 
     background-color: transparent;
   }
@@ -149,8 +156,9 @@ section {
   /* Style the collapsible content. Note: hidden by default */
   .næring-content {
     background-color: transparent;
-    font-size: 0.80rem;
-    color: rgba(0, 0, 0, 0.4);
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.50rem;
     padding: 0 18px;
     display: none;
     overflow: hidden;
@@ -158,8 +166,9 @@ section {
   }
 
   .ingredienser-content {
-    font-size: 0.80rem;
-    color: rgba(0, 0, 0, 0.4);
+    font-size: 1rem;
+    color: rgba(225, 225, 225, 0.75);
+    line-height: 1.50rem;
     padding: 0 18px;
     display: none;
     overflow: hidden;
@@ -167,12 +176,15 @@ section {
   }
 
   .oppbevaring-content {
-    font-size: 0.80rem;
-    color: rgba(0, 0, 0, 0.4);
+    font-size: 1rem;
+    color: rgba(225, 225, 225, 0.75);
+    line-height: 1.50rem;
     padding: 0 18px;
     display: none;
     overflow: hidden;
     margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
   }
 
 /*** Tror dette må kodes med css og ikke bruke png-filer i HTML. ***/
