@@ -123,18 +123,57 @@ section {
     margin-bottom: 2rem;
 }
 
-.produktinfo {
-    display: inline-block;
-    color: white;
+/* Style the button that is used to open and close the collapsible content */
+.collapsible-info {
     text-transform: uppercase;
-    font-size: 1.5rem;
-    text-decoration: none;
-    margin-bottom: 2rem;
-    padding: 0.5rem 0 0.5rem 0;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    text-align: left;
+    outline: none;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-}
+    background-color: transparent;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible-info:hover {
+    background-color: transparent;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .næring-content {
+    background-color: transparent;
+    font-size: 0.80rem;
+    color: rgba(0, 0, 0, 0.4);
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+
+  .ingredienser-content {
+    font-size: 0.80rem;
+    color: rgba(0, 0, 0, 0.4);
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+
+  .oppbevaring-content {
+    font-size: 0.80rem;
+    color: rgba(0, 0, 0, 0.4);
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
 
 /*** Tror dette må kodes med css og ikke bruke png-filer i HTML. ***/
 .produkt-nav {

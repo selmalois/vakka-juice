@@ -39,16 +39,33 @@
             <article class="produktsmak-appelsin">
                 <h1 class="produktsmak">Appelsin</h1>
                 <p class="produkt-brødtekst-appelsin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ideius numquam dolor vero hic unde nisi veritatis, inventore consequuntur harum recusandae tempora officiissuscipit neque ab enim perspiciatis minima.</p>
-                <p> 
-                    <a href="#" class="produktinfo">Næringsinnhold pr. 100ml</a>
-                </p>
-                <p>
-                    <a href="#" class="produktinfo">Ingredienser</a>
-                </p>
-                <p>
-                    <a href="#" class="produktinfo">Oppbevaring</a>
-                </p>
+                <button type="button" class="collapsible-info">Næringsinnhold</button>
+                <div class="næring-content">
+                    <p>Energi 180 kj/42 kcal</p>
+                    <p>Fett 0.5 g</p>
+                    <p>hvorav</p>
+                    <p>- mettede fettsyrer 0 g</p>
+                    <p>- enumettedefettsyrer 0 g</p>
+                    <p>- flerumettede fettsyrer 0.2 g</p>
+                    <p>Karbohydrater 9.6 g</p>
+                    <p>hvorav sukkerarter 9.6 g</p>
+                    <p>Protein 0.5 g</p>
+                    <p>Salt 0 g</p>
+                    <p>Vitamin C 29 mg</p>
+                    <p> = 36% av daglig referanseinntak.</p>
+                 </div>
+
+                <button type="button" class="collapsible-info">Ingredienser</button>
+                <div class="ingredienser-content">
+                    <p>Appelsinjuice fra konsentrat.</p>
+                </div>
+            
+                <button type="button" class="collapsible-info">Oppbevaring</button>
+                <div class="oppbevaring-content">
+                    <p>Oppbevares ved romtemperatur, 20-25 C. Åpnet: I kjøleskap, + 4 ˚C, i 5 dager. Nytes Avkjølt. Produktet skal ristes godt          før åpning.</p>
+                </div>
             </article>
+            
             <!-- Tror dette må kodes med css og ikke bruke png-filer i HTML. -->
             <div class="produkt-nav">
                 <img class="nav-venstre" src="./img-vækka/slideshow-piler/rgb-pil-v.png">
@@ -122,6 +139,23 @@
             <p>© 2019 Selma L. S. Holt</p>
         </div>
     </footer>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible-info");
+        var i;
+            
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+    </script>
 </body>
 
 </html>
