@@ -178,6 +178,8 @@ section {
 
 
 .nytt-utseende {
+    align-items: center;
+    justify-content: center;
     margin: 0 12rem 0 12rem;
 }
 
@@ -195,6 +197,14 @@ section {
     font-size: 1.25rem;
     margin-bottom: 2rem;
     line-height: 2;
+}
+
+.info-h1.utseende {
+    margin-right: 2rem;
+}
+
+.info-p.utseende {
+    margin-right: 2rem;
 }
 
 .god-juice-bilde-container {
@@ -232,16 +242,29 @@ section {
     width: 528px;
 }
 
-#forhandler {
-    background-color: black;
+.info-h1.trondheim {
+    margin-left: 2rem;
+}
+
+.info-p.trondheim {
+    margin-left: 2rem;
+}
+
+#forhandler-container {
+    background-color: #EBAB55;
     height: 50vh;
 
     color: white;
     text-align: center;
 
+    grid: flex;
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
+}
+
+.forhandler {
+    margin: 0 30rem 0 30rem;
 }
 
 .forhandler-h1 {
