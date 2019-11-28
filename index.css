@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
 body {
     font-family: Helvetica, sans-serif;
     font-size: 100%;
