@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vækka</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
@@ -23,9 +24,7 @@
     <main>
         <section id="landing-img">
             <article class="landing-pil-ned">
-                <a href="#produkter">
-                    <img class="img-pil-ned" src="./img-vækka/rgb-pil-ned.png">
-                </a>
+                <a href="#produkter"><img class="img-pil-ned" src="./img-vækka/rgb-pil-ned.png"></a>
             </article>
             <div class="landing-img-guide">
                 <h1>Produktbilde med alle tre juicer her.</h1>
@@ -97,17 +96,23 @@
             </div>
         </section>
     
-        <section id="forhandler-container">
-            <div class="forhandler">
+        <section id="forhandler">
+            <div class="forhandler-container">
                 <h1 class="forhandler-h1">Finn butikker</h1>
-                <p class="forhandler-p">VÆKKA kan fås tak i hos alle REMA 1000 butikker. Benytt søkefeltet under for å finnenærmeste butikk.<p>
+                <p class="forhandler-p">VÆKKA kan fås tak i hos alle REMA 1000 butikker. Benytt søkefeltet under for å finne din nærmeste butikk.<p>
             </div>
 
             <table class="søkefelt-tabell">
-                <tr class="søkefelt">
-                    <td class="postnummer">Postnummer</td>
-                    <td class="søk">Søk</td>
-                </tr>
+                <form action="https://www.rema.no/butikker/">
+                    <tr class="søkefelt">
+                        <td class="postnummer">
+                            <input class="input-postnummer" type="text" name="q" placeholder="Søk på sted" autocomplete="off">
+                        </td>
+                        <td class="søk">
+                            <button class="search-button"><i class="fas fa-search"></i></button>
+                        </td>
+                    </tr>
+                </form>
             </table>
         </section>
     </main>
