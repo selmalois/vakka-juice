@@ -124,6 +124,7 @@ section {
 .produktinfo {
     display: inline-block;
     color: white;
+    text-transform: uppercase;
     font-size: 1.5rem;
     text-decoration: none;
     margin-bottom: 2rem;
