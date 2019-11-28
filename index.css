@@ -184,23 +184,24 @@ section {
     overflow: hidden;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
   }
 
-/*** Tror dette må kodes med css og ikke bruke png-filer i HTML. ***/
-.produkt-nav {
-    display: flex;
-    justify-content: center;
-    max-width: 3rem;
-    position: absolute;
-    display: none;
+.neste-produkt-høyre {
+    height: 50px;
+    background: none;
+    border: none;
 }
 
-.nav-venstre {
-    left: 50px;
+.pil.h {
+    width: 1.5rem;
+    filter: invert(100%);
+    cursor: pointer;
 }
 
-/*** Tror dette må kodes med css og ikke bruke png-filer i HTML. ***/
+.input-postnummer:pil.h{ 
+    outline: none;
+}
 
 
 #vækka {
