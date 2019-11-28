@@ -8,12 +8,13 @@
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    scroll-snap-align: center;
+    
 }
 
 body {
     font-family: Helvetica, sans-serif;
     font-size: 100%;
+    
 }
 
 h1, h2, h3, h4, p {
@@ -53,6 +54,7 @@ section {
     height: 100vh;
     background-color: white;
     background-size: cover;
+    scroll-snap-align: center;
 
     /*** Er dette riktig måte å lage et universalt grid på? ***/
     display: grid;
@@ -250,7 +252,7 @@ section {
     margin-left: 2rem;
 }
 
-#forhandler-container {
+#forhandler {
     background-color: #EBAB55;
     height: 50vh;
 
@@ -263,7 +265,7 @@ section {
     align-items: center;
 }
 
-.forhandler {
+.forhandler-container {
     margin: 0 30rem 0 30rem;
 }
 
@@ -282,6 +284,7 @@ section {
 .søkefelt-tabell {
     margin-left: 35rem;
     margin-right: 35rem;
+    border-collapse: collapse;
 }
 
 .søkefelt {
@@ -291,11 +294,37 @@ section {
 
 .postnummer {
     color: grey;
+    
+}
+.input-postnummer {
+    width: 100%;
+    height: 100%;
     padding: 1.25rem;
+}
+
+.input-postnummer:focus {
+    outline: none;
 }
 
 .søk {
     background-color: grey;
+}
+
+.search-button {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: grey;
+    cursor: pointer;
+}
+
+.search-button:focus {
+    outline: none;
+}
+
+.fa-search {
+    font-size: 3rem;
 }
 
 
@@ -303,7 +332,7 @@ section {
 
 footer {
     background-color: black;
-    height: 90vh;
+    height: 50vh;
 }
 
 .sitat {
