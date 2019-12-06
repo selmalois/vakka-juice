@@ -18,8 +18,8 @@
             </a>
             
             <a class="nav-link" href="#produkter">Produkter</a>
-            <a class="nav-link" href="#vækka">Om serien</a>
-            <a class="nav-link" href="#forhandler">Finn butikker</a>
+            <a class="nav-link" href="#om-serien">Om serien</a>
+            <a class="nav-link" href="#finn-butikker">Finn butikker</a>
             <a class="nav-link" href="#kontakt">Kontakt</a>
         </nav>
     </header>
@@ -33,7 +33,7 @@
                 <a href="#produkter"><img class="img-pil-ned" src="./img-vækka/slideshow-piler/pil-ned.png"></a>
             </article>
             <div class="landing-sitat">
-                <h1 class="landing-h1">Rimelig trenger ikke å være kjedelig.</h1>
+                <h1 class="landing-h1">Rimelig trenger itj å vær kjedelig.</h1>
             </div>
         </section>
     
@@ -87,7 +87,7 @@
             </div>
         </section>
     
-        <section id="vækka">
+        <section id="om-serien">
             <div class="spørsmål" >
                 <h1 class="spørsmål-h1">Hva er vækka?</h1>
                 <p class="spørsmål-p">VÆKKA er REMA 1000ens nye re-design på produktserien PRIMA. Emballasjens utseende er blitt tydeligere slik at det blir enklere og raskere for deg å finne den på hylla. </p>
@@ -115,7 +115,7 @@
             </div>
         </section>
     
-        <section id="forhandler">
+        <section id="finn-butikker">
             <div class="forhandler-container">
                 <h1 class="forhandler-h1">Finn butikker</h1>
                 <p class="forhandler-p">VÆKKA kan fås tak i hos alle REMA 1000 butikker. Benytt søkefeltet under for å finne din nærmeste butikk.<p>
@@ -136,20 +136,35 @@
         </section>
     </main>
 
-    <footer id="kontakt">
-        <div class="footer-info">
-            <a class="foot-links" href="https://www.rema.no/kontakt-oss/">Kontakt oss</a>
-            <a class="foot-links" href="https://www.rema.no/">REMA 1000</a>
-            <a class="foot-links" href="https://www.reitangruppen.no/">Reitangruppen</a>
-        </div>
-        <div class="sitat">
-            <h1>Æ er itj så ille.</h1>
-        </div>
-        <div class="copyright">
-            <p>© 2019 Selma L. S. Holt</p>
+    <section id="kontakt">
+        <article class="border-container">
+            <nav class="bottom-nav">
+                <ul class="bottom-links-list">
+                    <li class="bottom-links-item">
+                        <a class="bottom-links" href="https://www.rema.no/kontakt-oss/">Kontakt oss</a>
+                    </li>
+                    <li class="bottom-links-item">
+                        <a class="bottom-links" href="https://www.rema.no/">REMA 1000</a>
+                    </li>
+                    <li class="bottom-links-item">
+                        <a class="bottom-links" href="https://www.reitangruppen.no/">Reitangruppen</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="sitat-container">
+                <h1 class="sitat-footer">For de små gledene.</h1>
+             </div>
+        </article>
+    </section>
+
+    <footer class="copyright-bottom">
+        <div class="copyright-container">
+            <p class="copyright">© 2019 Selma L. S. Holt</p>
         </div>
     </footer>
 
+<!-- Dette er et forsøk på å lage trekkspill-effekt på knappene til produkt-karusellen. Trekkspillet sin kdoing var utfordrende å forstå, så jeg fant en midlertidig løsning på ønsket effekt som jeg forstod litt mer av. -->
     <script>
         var coll = document.getElementsByClassName("collapsible-info");
         var i;

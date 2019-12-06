@@ -5,24 +5,25 @@
     box-sizing: border-box;
 }
 
-html {
+ /*** Dette er egentlig ment for å få en fin overgang med scrollingen og ha en fin opplysende effekt når man bruker nav-baren til å navigere seg opp og ned fremfor å "telepoertere" brått frem og tilbake. ***/
+/*** html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    
-}
+} ***/
+ /*** Av en eller annen grunn gjør kombinasjonen av disse to at man man kan scrolle ned til footeren, men footer blir kuttet uansett hvilketn vh jeg setter den på. Den gjør også at jeg kan scrolle forbi nav-bar uendelig. Dette har vi prøvd å løse til den grad vi kunne, så jeg har valgt å deaktivere denne kommandoen for nå i håp om å få løst det i senere tid. ***/
+
 
 body {
     font-family: Baskerville URW, 'Times New Roman', Times, serif;
     font-size: 100%;
-    
 }
 
 h1, h2, h3, h4, p {
     margin: 0;
 }
 
-/********************** header **********************/
 
+/********************** header **********************/
 header {
     position: fixed;
     width: 100%;
@@ -52,20 +53,23 @@ header {
     max-width: 6rem;
     filter: invert(100);
 }
+/********************** header **********************/
+
 
 /********************** main **********************/
-
 section {
     height: 100vh;
     background-color: white;
     background-size: cover;
     scroll-snap-align: center;
 
-    /*** Er dette riktig måte å lage et universalt grid på? ***/
+    /*** Har prøvd å lage et universalt grid... fant ut i etterkant at det kan være lurere å lage et grid for hver seksjon.. bedre kontroll på den måten. ***/
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
+
+    /*** Landingsbildet ***/
 #landing-section {
     background-color: black;
     overflow: hidden;
@@ -96,19 +100,27 @@ section {
     filter: invert(100);
 }
 
-.landing-h1 {
-    color: white;
-    font-style: italic;
-    text-align: center;
-    padding: 2rem 1rem 2rem 1rem;
+.landing-sitat {
+    margin-right: 3rem;
+    margin-left: -6rem;
 }
 
+.landing-h1 {
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 2rem 1rem 2rem 1rem;
+}
+    /*** Landingsbildet ***/
 
+
+    /*** De tre forskjellige smakene ***/
 #produkter {
     background-color: #EBA555;
     color: black;
     display: grid;
-    grid-template-columns: 100px 500px 600px 100px;
+    grid-template-columns: 100px 600px 600px 100px;
     grid-template-rows: 1fr 5px;
     justify-content: center;
     align-items: center;
@@ -117,14 +129,13 @@ section {
 .appelsin-img-container {
     grid-column-start: 2;
     grid-row-end: span 2;
-    background-color: white;
+
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-.appelsin-img {
-    width: 900px;
+    width: 528px;
+    height: 528px;
 }
 
 .juice-kartong {
@@ -135,7 +146,7 @@ section {
 .produktsmak-appelsin {
     grid-column-start: 3;
     grid-row-end: span 2;
-    margin: 0 12rem 0 2rem;
+    margin: 0 5rem 0 5rem;
 }
 
 .produktsmak {
@@ -173,15 +184,15 @@ section {
     margin-bottom: 1.25rem;
 
     background-color: transparent;
-  }
+}
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible-info:hover {
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible-info:hover {
     background-color: transparent;
-  }
+}
   
-  /* Style the collapsible content. Note: hidden by default */
-  .næring-content {
+/* Style the collapsible content. Note: hidden by default */
+.næring-content {
     background-color: transparent;
     font-style: italic;
     font-weight: 500;
@@ -192,33 +203,33 @@ section {
     display: none;
     overflow: hidden;
     margin-bottom: 1rem;
-  }
+}
 
-  .ingredienser-content {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 1rem;
-    color: rgba(0, 0, 0, 0.75);
-    line-height: 1.50rem;
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    margin-bottom: 1rem;
-  }
+.ingredienser-content {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.75);
+  line-height: 1.50rem;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
 
-  .oppbevaring-content {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 1rem;
-    color: rgba(0, 0, 0, 0.75);
-    line-height: 1.50rem;
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid black;
-  }
+.oppbevaring-content {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.75);
+  line-height: 1.50rem;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid black;
+}
 
 .button-venstre {
     grid-column-start: 1;
@@ -270,9 +281,11 @@ section {
 .img-dotter {
     width: 0.75rem;
 }
+    /*** De tre forskjellige smakene ***/
 
 
-#vækka {
+    /*** Hva er VÆKKA og om re-design ***/
+#om-serien {
     background-color: white;
     display: grid;
     grid-template-columns: 1fr;
@@ -302,7 +315,6 @@ section {
     margin-bottom: 3rem;
     line-height: 2;
 }
-
 
 .nytt-utseende {
     align-items: center;
@@ -355,8 +367,8 @@ section {
 
 .img-god-juice {
     object-fit: cover;
-    width: 528px;
-    height: 528px;
+    width: 33rem;
+    height: 33rem;
 }
 
 .throwback {
@@ -375,30 +387,32 @@ section {
 
 .img-trondheim {
     object-fit: cover;
-    width: 528px;
-    height: 528px;
+    width: 33rem;
+    height: 33rem;
 }
 
 .info-h1.trondheim {
     margin-top: 2rem;
     line-height: 2;
 }
+    /*** Hva er VÆKKA og om re-design ***/
 
-#forhandler {
+
+    /*** Finn butikker ***/
+#finn-butikker {
     background-color: black;
     height: 50vh;
 
     color: white;
     text-align: center;
 
-    grid: flex;
-    grid-template-columns: 1fr;
+    display: inline-block;
     justify-content: center;
     align-items: center;
 }
 
 .forhandler-container {
-    margin: 0 30rem 0 30rem;
+    margin: 5rem 30rem 0 30rem;
 }
 
 .forhandler-h1 {
@@ -413,11 +427,12 @@ section {
     font-weight: 500;
     font-style: italic;
     line-height: 2;
-    margin-bottom: -10rem;
+    margin-bottom: 1rem;
 }
 
+
 .søkefelt-tabell {
-    margin-left: 35rem;
+    margin-left: 36.75rem;
     margin-right: 35rem;
     border-collapse: collapse;
 }
@@ -428,13 +443,13 @@ section {
 }
 
 .postnummer {
-    color: grey;
+    color: rgb(43, 43, 43);
     
 }
 .input-postnummer {
     width: 100%;
     height: 100%;
-    padding: 1.25rem;
+    padding: 1.25rem 5rem 1.25rem 1.25rem;
 }
 
 .input-postnummer:focus {
@@ -442,7 +457,7 @@ section {
 }
 
 .søk {
-    background-color: grey;
+    background-color: rgb(43, 43, 43);
 }
 
 .search-button {
@@ -450,7 +465,7 @@ section {
     height: 100%;
     padding: 1rem;
     border: none;
-    background-color: grey;
+    background-color: rgb(43, 43, 43);
     cursor: pointer;
 }
 
@@ -459,31 +474,72 @@ section {
 }
 
 .fa-search {
-    font-size: 3rem;
+    font-size: 1.5rem;
+    color: white;
 }
+    /*** Finn butikker ***/
+/********************** main **********************/
 
 
 /********************** footer **********************/
-
-footer {
+#kontakt {
     font-family: ITC Avant Garde Gothic PRO, Arial, Helvetica, sans-serif;
     background-color: black;
-    height: 100vh;
-    display: flexbox;
+    height: 45vh;
+
+    display: flex;
+    padding: 3rem;
 }
 
-.foot-links {
+.border-container {
+    display: flex;
+    padding-top: 4rem;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.bottom-links-list {
+    list-style: none;
+}
+
+.bottom-links {
     text-decoration: none;
     color: white;
+    font-size: 1rem;
+    line-height: 2;
 }
 
-.sitat {
+.sitat-container {
+    width: 33rem;
+    margin-left: 54rem;
+    margin-right: -10rem;
+}
+
+.sitat-footer {
     font-family: Baskervillee URW, 'Times New Roman', Times, serif;
     color: white;
+    font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.copyright {
-    color: white;
+.copyright-bottom {
+    background-color: black;
+    height: 5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.copyright-container {
+    margin: 0  28rem 0 28rem;
+}
+
+.copyright {
+    font-family: ITC Avant Garde Gothic PRO, Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    color: white;
+    text-align: center;
+}
+/********************** footer **********************/
