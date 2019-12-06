@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
+
     <header>
         <nav class="top-nav">
-            <a class="nav-link logo" href="#landing-image">
+            <a class="nav-link logo-container" href="#landing-section">
                 <img class="img-logo" src="./img-vækka/rgb-logo-vækka.png" alt="Logo">
             </a>
             
@@ -21,20 +23,25 @@
             <a class="nav-link" href="#kontakt">Kontakt</a>
         </nav>
     </header>
+
     <main>
-        <section id="landing-img">
-            <article class="img-forside">
+        <section id="landing-section">
+            <article class="img-trio-container">
                 <img class="img-trio" src="./img-vækka/3d-vækka-trio-transp.png">
             </article>
-            <article class="landing-pil-ned">
-                <a href="#produkter"><img class="img-pil-ned" src="./img-vækka/rgb-pil-ned.png"></a>
+            <article class="img-pil-ned-container">
+                <a href="#produkter"><img class="img-pil-ned" src="./img-vækka/slideshow-piler/pil-ned.png"></a>
             </article>
-            <div class="landing-img-guide">
-                <h1>Nytt design, samme gode juicen.</h1>
+            <div class="landing-sitat">
+                <h1 class="landing-h1">Rimelig trenger ikke å være kjedelig.</h1>
             </div>
         </section>
     
         <section id="produkter">
+            <div class="button-venstre">
+                <button type="button" class="neste-produkt-venstre"><img class="pil-v" src="./img-vækka/slideshow-piler/pil-v.png"></i></button>
+            </div>
+
             <article class="appelsin-img-container">
                 <img class="appelsin-img" src="./img-vækka/3d-vækka-appelsin-transp.png">
             </article>
@@ -70,14 +77,20 @@
             </article>
 
             <div class="button-høyre">
-                <button type="button" class="neste-produkt-høyre"><img class="pil-h" src="./img-vækka/slideshow-piler/rgb-pil-h.png"></i></button>
+                <button type="button" class="neste-produkt-høyre"><img class="pil-h" src="./img-vækka/slideshow-piler/pil-h.png"></i></button>
+            </div>
+
+            <div class="dotter-container">
+                <img class="img-dotter" src="./img-vækka/slideshow-piler/rgb-sirkel-fylt.png">
+                <img class="img-dotter" src="./img-vækka/slideshow-piler/rgb-sirkel.png">
+                <img class="img-dotter" src="./img-vækka/slideshow-piler/rgb-sirkel.png">
             </div>
         </section>
     
         <section id="vækka">
             <div class="spørsmål" >
                 <h1 class="spørsmål-h1">Hva er vækka?</h1>
-                <p class="spørsmål-p">VÆKKA er REMA 1000ens nye re-design på produktserien PRIMA. Emballasjens utseende er blitttydeligere slik at det blir enklere og raskere for deg å finne den på hylla. </p>
+                <p class="spørsmål-p">VÆKKA er REMA 1000ens nye re-design på produktserien PRIMA. Emballasjens utseende er blitt tydeligere slik at det blir enklere og raskere for deg å finne den på hylla. </p>
             </div>
         </section>
     
@@ -98,7 +111,7 @@
             </article>
             <div class="utseende-info">
                 <h1 class="info-h1 trondheim">Et lite stykke av Trondheim.</h1>
-                <p class="info-p trondheim">REMA 1000 startet det hele i Trondheim. Derfor har vi gjenspeilet litt av historien vår iproduktseriens navn. VÆKKA, trøndersk for "uka", er en serie som skal friste å tas med hjem fordi det er visuelttiltrekkende samtidig som den har den samme god-kvalitet i råvarene.</p>
+                <p class="info-p trondheim">REMA 1000 startet det hele i Trondheim. Derfor gjenspeiler vi historien vår i produktseriets navn. VÆKKA, trøndersk for "uka", skal friste å ta med hjem fordi det er rimelig og samtidig visuelt tiltrekkende.</p>
             </div>
         </section>
     
@@ -122,6 +135,7 @@
             </table>
         </section>
     </main>
+
     <footer id="kontakt">
         <div class="footer-info">
             <a class="foot-links" href="https://www.rema.no/kontakt-oss/">Kontakt oss</a>
@@ -152,6 +166,7 @@
               });
             }
     </script>
+
 </body>
 
 </html>
